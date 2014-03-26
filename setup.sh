@@ -11,7 +11,7 @@ patch -p1 < ../patches/wpa_supplicant-mini.config.patch
 cp -rf -v ../default-files/* files/
 if ! grep -q commotion feeds.conf; then
     echo "adding commotion package feed..."
-    echo "src-git commotion git://github.com/opentechinstitute/commotion-feed.git" >> feeds.conf
+    echo "src-git commotion git://github.com/reseaulibre-polymtl/commotion-feed.git" >> feeds.conf
 fi
 
 scripts/feeds update -a
